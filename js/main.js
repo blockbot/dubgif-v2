@@ -129,9 +129,7 @@
 				$("#audio audio").attr("src", "mp3/" + data.media.mp3s[mp3Num]);
 				
 				window.location.hash = imageNum + "-" + mp3Num;
-					
-				console.log(Math.ceil(Math.random() * 47));
-				
+
 			});
 			
 			$(".link").click(function(){
