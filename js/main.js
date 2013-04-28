@@ -10,6 +10,8 @@
 				dataType: "json",
 				success: function(data){
 
+					$("#audio audio").prop("volume" , 0.1);
+
 					if(window.location.hash){
 						
 						var imageMp3 = window.location.hash.replace(/^.*#/, '').replace(/\?.*$/, '').split("-");
@@ -23,7 +25,6 @@
 							mp3Num = Math.ceil(Math.random() * 22);
 						
 						$("#images .active").attr("src", "gif2/" + data.media.images[imageNum]).css("height", $(window).height());
-						$("#audio audio").prop("volume" , 0.3);
 						$("#audio audio").attr("src", "mp3/" + data.media.mp3s[mp3Num]);
 						
 					}
