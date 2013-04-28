@@ -23,7 +23,7 @@
 							mp3Num = Math.ceil(Math.random() * 22);
 						
 						$("#images .active").attr("src", "gif2/" + data.media.images[imageNum]).css("height", $(window).height());
-						$("#audio audio").prop("volume" , 0.4);
+						$("#audio audio").prop("volume" , 0.3);
 						$("#audio audio").attr("src", "mp3/" + data.media.mp3s[mp3Num]);
 						
 					}
